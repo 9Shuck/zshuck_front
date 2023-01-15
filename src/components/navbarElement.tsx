@@ -1,4 +1,5 @@
 import PropTypes from "prop-types"
+import Link from 'next/link'
 
 interface navbarElementTools {
     link: string;
@@ -8,14 +9,14 @@ interface navbarElementTools {
 
 function NavbarElement(props: navbarElementTools) {
     return (
-        <a 
+        <Link 
             className="navbarElement" 
             href={props.link} 
             target={props.blank} 
             rel="noreferrer"
         >
             {props.name}
-        </a>
+        </Link>
     )
 }
 

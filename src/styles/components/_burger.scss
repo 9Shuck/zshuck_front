@@ -3,6 +3,12 @@
     height: 30px;
     right: 36px;
     top: 36px;
+    color: var(--primary-color);
+    -webkit-transition: color var(--fade-hover-time);
+    -moz-transition: color var(--fade-hover-time);
+    -ms-transition: color var(--fade-hover-time);
+    -o-transition: color var(--fade-hover-time);
+    transition: color var(--fade-hover-time);
 
     &:hover{
         color: var(--secondary-color);
@@ -60,12 +66,22 @@
     top: 20px !important;
 
     &:hover .bm-cross{
+            -webkit-transition: background-color var(--fade-hover-time);
+            -moz-transition: background-color var(--fade-hover-time);
+            -ms-transition: background-color var(--fade-hover-time);
+            -o-transition: background-color var(--fade-hover-time);
+            transition: background-color var(--fade-hover-time);
             background-color: var(--secondary-color) !important;
         }
 }
 
 .bm-cross {
-    background: var(--grey-dark);
+    background-color: var(--grey-dark);
+    -webkit-transition: background-color var(--fade-hover-time);
+    -moz-transition: background-color var(--fade-hover-time);
+    -ms-transition: background-color var(--fade-hover-time);
+    -o-transition: background-color var(--fade-hover-time);
+    transition: background-color var(--fade-hover-time);
     height: 36px !important;
 }
 
@@ -93,19 +109,19 @@
     color: var(--primary-color);
     text-decoration: none;
 
-    &:hover{
-        color: var(--base-color);
-        background-color: var(--secondary-color);
-    }
+    // &:hover{
+    //     color: var(--base-color);
+    //     background-color: var(--secondary-color);
+    // }
 
-    &:active{
-        color: var(--base-color);
-        background-color: var(--secondary-color-light);
-    }
+    // &:active{
+    //     color: var(--base-color);
+    //     background-color: var(--secondary-color-light);
+    // }
 
-    &:focus{
-        color: var(--base-color);
-        background-color: var(--secondary-color);
-    }
+    // &:focus{
+    //     color: var(--base-color);
+    //     background-color: var(--secondary-color);
+    // }
 }
 

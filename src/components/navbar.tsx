@@ -1,5 +1,6 @@
-import NavbarElement from './navbarElement'
-import BurgerMenu, {Links} from './burger'
+import { NavbarLinks } from './navbarLinks'
+import BurgerMenu from './burger'
+
 
 function NavBar() {
     return (
@@ -12,18 +13,10 @@ function NavBar() {
                     <BurgerMenu />
                 </div>
                 <div className="navbar__menu_md">
-                    <NavbarElement name="inicio" link="/" blank=""/>
-                    <NavbarElement name="sobre mí" link="/" blank=""/>
-                    <NavbarElement name="proyectos" link="/" blank=""/>
-                    <NavbarElement name="contacto" link="/" blank=""/>
-                    <NavbarElement name="blog" link="/" blank=""/>
+                    <NavbarLinks/>
                 </div>
                 <div className="navbar__menu_lg">
-                    <NavbarElement name="inicio" link="/" blank=""/>
-                    <NavbarElement name="sobre mí" link="/" blank=""/>
-                    <NavbarElement name="proyectos" link="/" blank=""/>
-                    <NavbarElement name="contacto" link="/" blank=""/>
-                    <NavbarElement name="blog" link="/" blank=""/>
+                    <NavbarLinks/>
                 </div>
             </div>
         </div>

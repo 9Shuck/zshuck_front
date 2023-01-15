@@ -25,18 +25,21 @@
         }
 
         @media (min-width: 768px) {
-            &_lg {
+            &_sm {
                 display: none;
             }
             &_md {
                 display: flex;
             }
-            &_sm {
+            &_lg {
                 display: none;
             }
         }
 
         @media (min-width: 1024px) {
+            &_sm {
+                display: none;
+            }
             &_md {
                 display: none;
             }
