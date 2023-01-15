@@ -1,0 +1,52 @@
+.navbar {
+    border-bottom: 0.1em solid var(--grey-light);
+    padding: 1.5em 3em 1.5em 3em;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        font-size: 1.5em;
+    }
+
+    &__menu {
+
+        &_sm {
+            display:flex;
+        }
+
+        &_md {
+            display:none;
+            gap: 50px;
+        }
+
+        &_lg {
+            display: none;
+            gap: 50px;
+        }
+
+        @media (min-width: 768px) {
+            &_sm {
+                display: none;
+            }
+            &_md {
+                display: flex;
+            }
+            &_lg {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            &_sm {
+                display: none;
+            }
+            &_md {
+                display: none;
+            }
+            &_lg {
+                display: flex;
+            }
+        }
+    }
+
+}

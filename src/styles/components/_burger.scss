@@ -1,0 +1,127 @@
+.bm-burger-button {
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+    color: var(--primary-color);
+    -webkit-transition: color var(--fade-hover-time);
+    -moz-transition: color var(--fade-hover-time);
+    -ms-transition: color var(--fade-hover-time);
+    -o-transition: color var(--fade-hover-time);
+    transition: color var(--fade-hover-time);
+
+    &:hover{
+        color: var(--secondary-color);
+        -webkit-transition: color var(--fade-hover-time);
+        -moz-transition: color var(--fade-hover-time);
+        -ms-transition: color var(--fade-hover-time);
+        -o-transition: color var(--fade-hover-time);
+        transition: color var(--fade-hover-time);
+    }
+}
+
+#react-burger-menu-btn{
+    width: 36px !important;
+    height: 30px !important;
+    right: 45px !important;
+    top: 28px !important;
+    left: auto !important;
+}
+
+.bm-overlay {
+    left:0;
+    position: absolute !important;
+    width: 100%;
+    background: var(--grey-light) !important;
+    top: 0;
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    width: 100vw !important;
+    position: absolute !important;
+    left:0;
+    top:0;
+    }
+    
+.bm-menu {
+    background: var(--base-color);
+    font-size: 1.15em;
+}
+
+.bm-burger-bars {
+    background: var(--primary-color);
+}  
+
+.bm-burger-bars-hover {
+    background: #a90000;
+
+}
+
+.bm-cross-button {
+    height: 40px !important;
+    width: 50px;
+    right: 3.4em !important;
+    top: 20px !important;
+
+    &:hover .bm-cross{
+            -webkit-transition: background-color var(--fade-hover-time);
+            -moz-transition: background-color var(--fade-hover-time);
+            -ms-transition: background-color var(--fade-hover-time);
+            -o-transition: background-color var(--fade-hover-time);
+            transition: background-color var(--fade-hover-time);
+            background-color: var(--secondary-color) !important;
+        }
+}
+
+.bm-cross {
+    background-color: var(--grey-dark);
+    -webkit-transition: background-color var(--fade-hover-time);
+    -moz-transition: background-color var(--fade-hover-time);
+    -ms-transition: background-color var(--fade-hover-time);
+    -o-transition: background-color var(--fade-hover-time);
+    transition: background-color var(--fade-hover-time);
+    height: 36px !important;
+}
+
+
+.bm-morph-shape {
+    fill: #3d5bde;
+}
+
+.bm-item-list {
+    color: var(--base-color);
+    margin-top: 4.2em;
+    text-align: center;
+}
+
+.bm-item {
+    display: inline-block;
+}
+
+/* styling next link component so that will be a column list of links*/
+.bm-item-list a {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--grey-light) !important;
+    padding: 1em;
+    color: var(--primary-color);
+    text-decoration: none;
+
+    // &:hover{
+    //     color: var(--base-color);
+    //     background-color: var(--secondary-color);
+    // }
+
+    // &:active{
+    //     color: var(--base-color);
+    //     background-color: var(--secondary-color-light);
+    // }
+
+    // &:focus{
+    //     color: var(--base-color);
+    //     background-color: var(--secondary-color);
+    // }
+}
+

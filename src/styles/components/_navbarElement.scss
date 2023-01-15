@@ -1,0 +1,38 @@
+.navbarElement {
+    padding: 0.3em 0.1em 0.3em 0.1em;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--base-color);
+
+    // Fade 
+    -webkit-transition: color var(--fade-hover-time);
+    -moz-transition: color var(--fade-hover-time);
+    -ms-transition: color var(--fade-hover-time);
+    -o-transition: color var(--fade-hover-time);
+    transition: color var(--fade-hover-time), 
+                border-bottom var(--fade-hover-time);
+
+    &:hover {
+        color: var(--secondary-color);
+        border-bottom: 2px solid var(--secondary-color);
+
+        // Fade color
+        -webkit-transition: color var(--fade-hover-time);
+        -moz-transition: color var(--fade-hover-time);
+        -ms-transition: color var(--fade-hover-time);
+        -o-transition: color var(--fade-hover-time);
+        transition: color var(--fade-hover-time), 
+                    border-bottom var(--fade-hover-time);
+    }
+
+    &:active {
+        color: var(--secondary-color-light);
+        border-bottom: 2px solid var(--secondary-color-light);
+    }
+
+    &:focus {
+        color: var(--secondary-color-light);
+        border-bottom: 2px solid var(--secondary-color-light);
+    }
+}
+

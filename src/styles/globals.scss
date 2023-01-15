@@ -1,10 +1,29 @@
-:root {
-  $base-color: white;
-  $primary-color: black;
-  $secondary-color: #F43B00;
-  $secondary-color-light: #f43d0075;
+@import 'components/navbar';
+@import 'components/navbarElement';
+@import 'components/burger';
 
-  $grey-dark: rgb(112, 112, 112);
-  $grey: rgb(183, 183, 183);
-  $grey-light: rgb(228, 227, 227);
+:root {
+  --base-color: white;
+  --primary-color: black;
+  --secondary-color: #F43B00;
+  --secondary-color-light: #f43d0075;
+
+  --grey-dark: rgb(112, 112, 112);
+  --grey: rgb(183, 183, 183);
+  --grey-light: rgba(239, 237, 237, 0.529);
+
+  --font: 'Inter';
+
+  --fade-hover-time: 0.65s;
+  --fade-hover-half-time: var(--fade-hover-time/2);
 }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+}
+
+.secondary-color{
+  color: var(--secondary-color);
+}
+
