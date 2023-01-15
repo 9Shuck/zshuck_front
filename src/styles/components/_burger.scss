@@ -1,0 +1,83 @@
+.bm-burger-button {
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+
+    &:hover{
+        color: var(--secondary-color);
+        -webkit-transition: color var(--fade-hover-time);
+        -moz-transition: color var(--fade-hover-time);
+        -ms-transition: color var(--fade-hover-time);
+        -o-transition: color var(--fade-hover-time);
+        transition: color var(--fade-hover-time);
+    }
+}
+
+#react-burger-menu-btn{
+    width: 36px !important;
+    height: 30px !important;
+    right: 45px !important;
+    top: 28px !important;
+    left: auto !important;
+}
+
+.bm-overlay {
+    left:0;
+    position: absolute !important;
+    width: 100%;
+    background: rgba(196, 195, 195, 0.3) !important;
+}
+
+.bm-burger-bars {
+    background: var(--primary-color);
+}  
+
+.bm-burger-bars-hover {
+background: #a90000;
+
+}
+
+.bm-cross-button {
+height: 24px;
+width: 24px;
+}
+
+.bm-cross {
+background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+position: fixed;
+height: 100%;
+width: 100vh !important;
+position: absolute !important;
+left:0;
+}
+
+.bm-menu {
+    background: var(--base-color);
+    padding: 0.3rem 0.3rem 0;
+    font-size: 1.15em;
+}
+
+.bm-morph-shape {
+fill: #3d5bde;
+}
+
+.bm-item-list {
+
+color: #ebebe9;
+padding: 0.8em;
+}
+
+.bm-item {
+display: inline-block;
+}
+
+/* styling next link component so that will be a column list of links*/
+.bm-item-list a {
+display: flex;
+flex-direction: column;
+}
+

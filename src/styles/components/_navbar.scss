@@ -9,8 +9,41 @@
     }
 
     &__menu {
-        display: flex;
-        gap: 50px;
+
+        &_sm {
+            display:flex;
+        }
+
+        &_md {
+            display:none;
+            gap: 50px;
+        }
+
+        &_lg {
+            display: none;
+            gap: 50px;
+        }
+
+        @media (min-width: 768px) {
+            &_lg {
+                display: none;
+            }
+            &_md {
+                display: flex;
+            }
+            &_sm {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            &_md {
+                display: none;
+            }
+            &_lg {
+                display: flex;
+            }
+        }
     }
 
 }
