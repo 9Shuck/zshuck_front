@@ -1,12 +1,20 @@
 import NavbarElement from './navbarElement'
+import { navLinks } from "../data/navlinks"
 
 
 export const NavbarLinks = () => (
     <>
-        <NavbarElement name="inicio" link="/" blank=""/>
-        <NavbarElement name="sobre mí" link="/" blank=""/>
-        <NavbarElement name="proyectos" link="/" blank=""/>
-        <NavbarElement name="contacto" link="/" blank=""/>
-        <NavbarElement name="blog" link="/" blank=""/>
+        {
+            navLinks.map((link, index) => {
+                return(
+                    <NavbarElement 
+                        key={index} 
+                        name={link.name} 
+                        link={link.path} 
+                        blank=""
+                    />
+                )
+            })
+        }
     </>
 )
