@@ -1,0 +1,36 @@
+.subfooter {
+    background-color: var(--grey-dark);
+    margin-top: 5em;
+    padding: 1em 0em 1em 0em;
+    min-height: 5em;
+    min-width: 100%;
+    color: var(--grey-light);
+    font-size: 0.7em;
+    display: block;
+    text-align: center;
+    
+    &__company {
+        display: flex;
+        vertical-align: middle;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+    }
+
+    &__logo {
+        font-size: 1.3em;
+        vertical-align: middle;
+        margin-top: 0.5em;
+    }
+}
+
+@media (min-width: 768px) {
+    .subfooter{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.8em;
+        &__logo{
+            margin-top: 0;
+        }
+    }
+}

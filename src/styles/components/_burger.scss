@@ -30,10 +30,12 @@
 
 .bm-overlay {
     left:0;
+    height: 0;
     position: absolute !important;
     width: 100%;
     background: var(--grey-light) !important;
     top: 0;
+    z-index: 9999;
 }
 
 .bm-menu-wrap {
@@ -43,6 +45,7 @@
     position: absolute !important;
     left:0;
     top:0;
+    z-index: 9999;
     }
     
 .bm-menu {
