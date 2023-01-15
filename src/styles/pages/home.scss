@@ -1,0 +1,36 @@
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    &__header {
+        text-align: center;
+        width: 40%;
+        
+        &__pretitle {
+            color: var(--grey-dark);
+            margin-top: 4em;
+            letter-spacing: 0.20em;
+        }
+
+        &__title {
+            margin-top: -0.7em;
+            margin-bottom: -0.2em;
+            font-size: 4em;
+            padding: 0 !important;
+        }
+
+        &__photo {
+            background-image: url('../../data/images/Photo.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 4px solid var(--secondary-color);
+            border-radius: 200px;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+
+        &__description {
+            margin-top: 2.5em;
+        }
+    }
+}

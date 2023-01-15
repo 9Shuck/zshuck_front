@@ -1,6 +1,7 @@
 @import 'components/navbar';
 @import 'components/navbarElement';
 @import 'components/burger';
+@import 'pages/home';
 
 :root {
   --base-color: white;
@@ -27,3 +28,6 @@ body {
   color: var(--secondary-color);
 }
 
+.font-md {
+  font-size: 0.3em !important;
+}
