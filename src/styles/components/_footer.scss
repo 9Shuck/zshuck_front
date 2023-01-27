@@ -17,6 +17,20 @@
         vertical-align: middle;
         margin-right: 0.5em;
         margin-left: 0.5em;
+        padding: 5em 0 5em 0;
+        &__posts{
+            &_1{
+                min-width: 30%;
+                padding: 0em 1em 2em 1em;
+            }
+            &_2{
+                min-width: 30%;
+                padding: 0em 1em 0em 1em;
+            }
+        }
+        &__about {
+            padding: 0em 1em 2em 1em;
+        }
     }
 
     &__logo {
@@ -59,6 +73,36 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .footer{
+        justify-content: space-around;
+        align-items: center;
+        &__logo{
+            margin-top: 0;
+        }
+        &__company {
+            padding: 5em 9.5em 5em 9.5em;
+            display: flex;
+            text-align: left;
+            &__posts{
+                width: 65%;
+                display: flex;
+                justify-content: space-around;
+                &_1{
+                    min-width: 30%;
+                }
+                &_2{
+                    min-width: 30%;
+                }
+            }
+            &__about {
+                padding: 0em 10em 0em 0em;
+                max-width: 35%;
+            }
+
+        }
+    }
+}
 @media (min-width: 768px) {
     .footer{
         justify-content: space-around;
@@ -67,7 +111,26 @@
             margin-top: 0;
         }
         &__company {
-            padding: 5em 0 5em 0;
+            padding: 5em 9.5em 5em 9.5em;
+            display: flex;
+            text-align: left;
+            &__posts{
+                width: 65%;
+                display: flex;
+                justify-content: space-around;
+                &_1{
+                    min-width: 30%;
+                    padding: 0em 3em 0em 0em;
+                }
+                &_2{
+                    min-width: 30%;
+                }
+            }
+            &__about {
+                padding: 0em 6em 0em 0em;
+                max-width: 35%;
+            }
+
         }
         &__breaker {
             height: 1px;

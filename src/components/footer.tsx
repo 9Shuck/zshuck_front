@@ -8,7 +8,31 @@ function Footer() {
         <div className="footerContainer">
         <div className="footer">
             <div className="footer__company">
-                various
+                <div className='footer__company__about'>
+                    <p>sobre mí</p>
+                    <p>Hola 👋🏽 mi nombre es Rubén Pérez y soy full-stack developer. 
+                        Desarrollo todo tipo de páginas web y aplicaciones. Puedes seguirme
+                        en mis redes para ver consejos sobre programación.</p>
+                        <p>Hola 👋🏽 mi nombre es Rubén Pérez y soy full-stack developer. 
+                        Desarrollo todo tipo de páginas web y aplicaciones. Puedes seguirme
+                        en mis redes para ver consejos sobre programación.</p>
+                                </div>
+                <div className="footer__company__posts">
+                    <div className='footer__company__posts_1'>
+                        <p>últimos Posts</p>
+                        <p>POST 1</p>
+                        <p>POST 2</p>
+                        <p>POST 3</p>
+                        <p>POST 4</p>
+                        <p>POST 5</p>
+                    </div>
+                    <div className='footer__company__posts_2'>
+                        <p>zshuck</p>
+                        <p>política de cookies</p>
+                        <p>política de privacidad</p>
+                        <p>contacto</p>
+                    </div>
+                </div>
             </div>
             <div className="footer__breaker"></div>
             <div className="footer__social">
