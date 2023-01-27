@@ -1,6 +1,5 @@
 .subfooter {
     background-color: var(--grey-dark);
-    margin-top: 5em;
     padding: 1em 0em 1em 0em;
     min-height: 5em;
     min-width: 100%;
@@ -11,6 +10,7 @@
     
     &__company {
         display: flex;
+        justify-content: center;
         vertical-align: middle;
         margin-right: 0.5em;
         margin-left: 0.5em;

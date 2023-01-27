@@ -1,0 +1,121 @@
+.footer {
+    background-color: var(--grey-mid-light);
+    margin-top: 5em;
+    padding: 2em 0em 1em em;
+    min-height: 5em;
+    min-width: 100%;
+    color: var(--primary-color);
+    font-size: 0.7em;
+    display: block;
+    text-align: center;
+    &__breaker {
+        height: 1px;
+        background-color: var(--grey);
+        margin: 0em 1em 0em 1em;
+    }
+    &__company {
+        vertical-align: middle;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+    }
+
+    &__logo {
+        font-size: 1.3em;
+        vertical-align: middle;
+        margin-top: 0.5em;
+    }
+    &__social {
+        display: block;
+        justify-content: space-around;
+        // border-top: 1px solid var(--grey);
+        padding: 0em 0 3em 0;
+
+        &__links {
+            display:flex;
+            justify-content: space-around;
+            align-self: center;
+            padding: 3em 0 4em 0;
+
+            & > a {
+                text-decoration: none;
+                color: var(--primary-color);
+                -webkit-transition: color var(--fade-hover-time);
+                -moz-transition: color var(--fade-hover-time);
+                -ms-transition: color var(--fade-hover-time);
+                -o-transition: color var(--fade-hover-time);
+                transition: color var(--fade-hover-time);
+            
+                
+                &:hover {
+                    color: var(--secondary-color);
+                    -webkit-transition: color var(--fade-hover-time);
+                    -moz-transition: color var(--fade-hover-time);
+                    -ms-transition: color var(--fade-hover-time);
+                    -o-transition: color var(--fade-hover-time);
+                    transition: color var(--fade-hover-time);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .footer{
+        justify-content: space-around;
+        align-items: center;
+        &__logo{
+            margin-top: 0;
+        }
+        &__company {
+            padding: 5em 0 5em 0;
+        }
+        &__breaker {
+            height: 1px;
+            background-color: var(--grey);
+            margin: 0 10em 0 10em;
+        }
+        &__social {
+            display: flex;
+            justify-content: space-around;
+            // border-top: 1px solid var(--grey);
+            padding: 3em 0 3em 0;
+
+            &__div {
+                align-self: center;
+            }
+            &__links {
+                display:flex;
+                justify-content: space-around;
+                min-width: 30em;
+                align-self: center;
+                font-size: 1.2em;
+                padding: 2em 0 2em 0;
+
+                & > a {
+                    text-decoration: none;
+                    color: var(--primary-color);
+                    -webkit-transition: color var(--fade-hover-time);
+                    -moz-transition: color var(--fade-hover-time);
+                    -ms-transition: color var(--fade-hover-time);
+                    -o-transition: color var(--fade-hover-time);
+                    transition: color var(--fade-hover-time);
+                
+                    
+                    &:hover {
+                        color: var(--secondary-color);
+                        -webkit-transition: color var(--fade-hover-time);
+                        -moz-transition: color var(--fade-hover-time);
+                        -ms-transition: color var(--fade-hover-time);
+                        -o-transition: color var(--fade-hover-time);
+                        transition: color var(--fade-hover-time);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.footerContainer{
+    max-width: 100%;
+}
