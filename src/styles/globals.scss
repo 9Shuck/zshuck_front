@@ -2,6 +2,9 @@
 @import 'components/navbarElement';
 @import 'components/burger';
 @import 'pages/home';
+@import 'components/subfooter';
+@import 'components/footer';
+@import 'components/socialNavbar';
 
 :root {
   --base-color: white;
@@ -10,18 +13,28 @@
   --secondary-color-light: #f43d0075;
 
   --grey-dark: rgb(112, 112, 112);
+  --grey-mid-dark: rgb(130, 129, 129);
   --grey: rgb(183, 183, 183);
+  --grey-mid-light: rgba(227, 227, 227, 0.529);
   --grey-light: rgba(239, 237, 237, 0.529);
 
   --font: 'Inter';
 
   --fade-hover-time: 0.65s;
   --fade-hover-half-time: var(--fade-hover-time/2);
+
+  --margin-top-view: 4em;
+
 }
 
 body {
   margin: 0;
   font-family: var(--font);
+}
+
+html { 
+  padding:0; 
+  margin:0;
 }
 
 .secondary-color{

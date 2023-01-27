@@ -1,0 +1,134 @@
+.social-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialLink > .svg-linkedin, .svg-tiktok, .svg-twitter {
+    -webkit-transition: fill var(--fade-hover-time);
+    -moz-transition: fill var(--fade-hover-time);
+    -ms-transition: fill var(--fade-hover-time);
+    -o-transition: fill var(--fade-hover-time);
+    transition: fill var(--fade-hover-time);
+    align-self: center;
+    &:hover{
+            fill: var(--secondary-color);
+            -webkit-transition: fill var(--fade-hover-time);
+            -moz-transition: fill var(--fade-hover-time);
+            -ms-transition: fill var(--fade-hover-time);
+            -o-transition: fill var(--fade-hover-time);
+            transition: fill var(--fade-hover-time);
+    }
+}
+.socialLink > .svg-instagram{
+    align-self: center;
+    & > path {
+        -webkit-transition: stroke var(--fade-hover-time);
+        -moz-transition: stroke var(--fade-hover-time);
+        -ms-transition: stroke var(--fade-hover-time);
+        -o-transition: stroke var(--fade-hover-time);
+        transition: stroke var(--fade-hover-time);
+    }
+    &:hover{
+        & > path {
+            stroke: var(--secondary-color);
+            -webkit-transition: stroke var(--fade-hover-time);
+            -moz-transition: stroke var(--fade-hover-time);
+            -ms-transition: stroke var(--fade-hover-time);
+            -o-transition: stroke var(--fade-hover-time);
+            transition: stroke var(--fade-hover-time);
+        }
+    }
+}
+.socialLink > .svg-github{
+    align-self: center;
+    & > path {
+        -webkit-transition: fill var(--fade-hover-time);
+        -moz-transition: fill var(--fade-hover-time);
+        -ms-transition: fill var(--fade-hover-time);
+        -o-transition: fill var(--fade-hover-time);
+        transition: fill var(--fade-hover-time);
+    }
+    &:hover{
+        & > path {
+            fill: var(--secondary-color);
+            -webkit-transition: fill var(--fade-hover-time);
+            -moz-transition: fill var(--fade-hover-time);
+            -ms-transition: fill var(--fade-hover-time);
+            -o-transition: fill var(--fade-hover-time);
+            transition: fill var(--fade-hover-time);
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .social-nav{
+        display:flex;
+        justify-content: space-around;
+        min-width: 30em;
+    
+    }
+    .socialLink {
+        vertical-align: middle;
+        display: flex;
+        
+    }
+    .socialLink > .svg-linkedin, .svg-tiktok, .svg-twitter {
+        -webkit-transition: fill var(--fade-hover-time);
+        -moz-transition: fill var(--fade-hover-time);
+        -ms-transition: fill var(--fade-hover-time);
+        -o-transition: fill var(--fade-hover-time);
+        transition: fill var(--fade-hover-time);
+        align-self: center;
+        &:hover{
+                fill: var(--secondary-color);
+                -webkit-transition: fill var(--fade-hover-time);
+                -moz-transition: fill var(--fade-hover-time);
+                -ms-transition: fill var(--fade-hover-time);
+                -o-transition: fill var(--fade-hover-time);
+                transition: fill var(--fade-hover-time);
+        }
+    }
+    .socialLink > .svg-instagram{
+        align-self: center;
+        & > path {
+            -webkit-transition: stroke var(--fade-hover-time);
+            -moz-transition: stroke var(--fade-hover-time);
+            -ms-transition: stroke var(--fade-hover-time);
+            -o-transition: stroke var(--fade-hover-time);
+            transition: stroke var(--fade-hover-time);
+        }
+        &:hover{
+            & > path {
+                stroke: var(--secondary-color);
+                -webkit-transition: stroke var(--fade-hover-time);
+                -moz-transition: stroke var(--fade-hover-time);
+                -ms-transition: stroke var(--fade-hover-time);
+                -o-transition: stroke var(--fade-hover-time);
+                transition: stroke var(--fade-hover-time);
+            }
+        }
+    }
+    .socialLink > .svg-github{
+        align-self: center;
+        & > path {
+            -webkit-transition: fill var(--fade-hover-time);
+            -moz-transition: fill var(--fade-hover-time);
+            -ms-transition: fill var(--fade-hover-time);
+            -o-transition: fill var(--fade-hover-time);
+            transition: fill var(--fade-hover-time);
+        }
+        &:hover{
+            & > path {
+                fill: var(--secondary-color);
+                -webkit-transition: fill var(--fade-hover-time);
+                -moz-transition: fill var(--fade-hover-time);
+                -ms-transition: fill var(--fade-hover-time);
+                -o-transition: fill var(--fade-hover-time);
+                transition: fill var(--fade-hover-time);
+            }
+        }
+    }
+    
+}
