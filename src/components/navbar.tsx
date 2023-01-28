@@ -1,11 +1,25 @@
 import { NavbarLinks } from './navbarLinks'
 import BurgerMenu from './burger'
 import Link from 'next/link'
+import { useEffect, useState } from 'react';
+
 
 
 function NavBar() {
+
+    const [scrolled, setScrolled] = useState(false);
+    useEffect(() => {
+        window.onscroll = function() {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+    }, []);
+    
     return (
-        <div className="navbar">
+        <div className={scrolled ? "navbar navbar-shadow" : "navbar"}>
             <div className="navbar__logo">
                 <Link href="/">
                 <span className="secondary-color">z</span>shuck
