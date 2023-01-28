@@ -5,11 +5,17 @@
 @import 'components/subfooter';
 @import 'components/footer';
 @import 'components/socialNavbar';
+@import 'pages/contact';
+@import 'components/map';
+@import 'components/contactButton';
+@import 'components/form';
+
 
 :root {
   --base-color: white;
   --primary-color: black;
   --secondary-color: #F43B00;
+  --secondary-color-alt: #ef7146;
   --secondary-color-light: #f43d0075;
 
   --grey-dark: rgb(112, 112, 112);
@@ -30,6 +36,7 @@
 body {
   margin: 0;
   font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
 }
 
 html { 
@@ -38,9 +45,38 @@ html {
 }
 
 .secondary-color{
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
 }
 
 .font-md {
   font-size: 0.3em !important;
+}
+
+.brand_link{
+  text-decoration: none;
+  text-decoration: none;
+                color: var(--secondary-color);
+                -webkit-transition: color var(--fade-hover-time);
+                -moz-transition: color var(--fade-hover-time);
+                -ms-transition: color var(--fade-hover-time);
+                -o-transition: color var(--fade-hover-time);
+                transition: color var(--fade-hover-time);
+            
+                
+                &:hover {
+                    color: var(--secondary-color-light);
+                    -webkit-transition: color var(--fade-hover-time);
+                    -moz-transition: color var(--fade-hover-time);
+                    -ms-transition: color var(--fade-hover-time);
+                    -o-transition: color var(--fade-hover-time);
+                    transition: color var(--fade-hover-time);
+                }
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.subheader{
+  font-size: 1.5em;
 }
