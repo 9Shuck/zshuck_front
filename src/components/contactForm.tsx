@@ -1,6 +1,46 @@
 import SocialNavbar from "./socialNavbar";
+import { useState, useEffect } from 'react'
 
 function ContactForm() {
+
+    const handleSubmit = (e) => { 
+        e.preventDefault()
+        console.log('Sending')
+    let data = {
+        name,
+        email,
+        message
+    }
+    fetch('api/contact', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+        }).then((res) => {
+            console.log('Response received')
+            if (res.status === 200) {
+            console.log('Response succeeded!')
+            setSubmitted(true)
+            setName('')
+            setEmail('')
+            setTopic('')
+            setMessage('')
+        }
+        })
+}
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [topic, setTopic] = useState('')
+    const [message, setMessage] = useState('')
+    const [submitted, setSubmitted] = useState(false)
+
+    useEffect(()=>{
+        console.log(name, email, topic, message)
+    },[name])
+
     return(
         <div className="formContainer">
             <div className="formInfo" id="contactInfo">
@@ -33,25 +73,62 @@ function ContactForm() {
                     <SocialNavbar/>
                 </div>
             </div>
-            <form className="formFields" action="/send-data-here" method="post">
+            <form className="formFields" method="post">
                 <div>
-                <label for="name">Name:</label>
-                <input className="formFields__input" type="text" placeholder="Nombre" id="name" name="first" />
+                <label>Name:</label>
+                <input className="formFields__input" 
+                        type="text" 
+                        placeholder="Nombre" 
+                        id="name" 
+                        name="first"
+                        pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$"
+                        title="El nombre sólo puede contener letras y mínimo 2." 
+                        onChange={(e)=>{setName(e.target.value)}}
+                        />
                 </div>
                 <div>
-                <label for="mail">Email:</label>
-                <input className="formFields__input" type="text" placeholder="Email" id="mail" name="email" />
+                <label>Email:</label>
+                <input className="formFields__input" 
+                        type="text" 
+                        placeholder="Email" 
+                        id="mail" 
+                        name="email" 
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        title="El email introducido no es válido." 
+                        onChange={(e)=>{setEmail(e.target.value)}}
+                        />
                 </div>
                 <div>
-                <label for="topic">Asunto:</label>
-                <input className="formFields__input" type="text" placeholder="Asunto" id="topic" name="topic" />
+                <label>Asunto:</label>
+                <input className="formFields__input" 
+                        type="text" 
+                        placeholder="Asunto" 
+                        id="topic" 
+                        name="topic" 
+                        maxLength="20"
+                        minLength="5"
+                        pattern="[A-Za-z][A-Za-z0-9_ -]{5,20}$"
+                        title="El asunto solo puede contener letras. Mínimo 5 y máximo 20." 
+                        onChange={(e)=>{setTopic(e.target.value)}}
+                        />
                 </div>
                 <div className="formFields__message">
-                    <textarea  className="formFields__input" type="text" placeholder="Mensaje" id="message" name="topic" />
+                    <textarea  className="formFields__input" 
+                                type="text" 
+                                placeholder="Mensaje" 
+                                id="message" 
+                                name="topic" 
+                                minLength="10"
+                                onChange={(e)=>{setMessage(e.target.value)}}
+                                />
                 </div>
                 <div className="formFields__submitContainer">
-                <input className="formFields__submit" type="submit" value="Enviar mensaje"/>
+                <input className="formFields__submit" 
+                        type="submit" 
+                        value="Enviar mensaje"
+                        onSubmit={(e) => {handleSubmit(e)}}/>
                 </div>
+                <div className="formFields__submit" onClick={(e) => {handleSubmit(e)}}/>
             </form>
         </div>
     )

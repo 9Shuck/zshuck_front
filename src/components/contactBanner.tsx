@@ -1,5 +1,5 @@
 import MapIcon from "@/data/images/icons/mapIcon";
-import MailIcon from "@/data/images/icons/mailicon.tsx"
+import MailIcon from "@/data/images/icons/mailicon";
 
 function ContactBanner() {
     return(

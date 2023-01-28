@@ -90,6 +90,10 @@
         -ms-transition: border var(--fade-hover-time);
         -o-transition: border var(--fade-hover-time);
         transition: border var(--fade-hover-time);
+        &:invalid{
+            border: 1px solid var(--secondary-color);
+            box-shadow: 0 0 3px var(--secondary-color);
+        }
         &:focus {
             border: 1px solid var(--secondary-color-light);
             outline: none;
