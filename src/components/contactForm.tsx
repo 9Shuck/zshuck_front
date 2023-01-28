@@ -5,7 +5,7 @@ function ContactForm() {
         <div className="formContainer">
             <div className="formInfo" id="contactInfo">
                 <div className="formInfo__text">
-                    <div className="formInfo__title">CONTACTO</div>
+                    <div className="formInfo__title">métodos de contacto</div>
                     <p>Puedes contactar conmigo de las siguientes formas:</p>
                     <ul>
                         <li>
@@ -22,7 +22,7 @@ function ContactForm() {
                         </li>
                         <li>
                             <p>Enviando un email a mi 
-                            <a className="brand_link" href="/contact#rrss">
+                            <a className="brand_link" href="/contact#email">
                             <span className="bold" id="socialLinks">&nbsp;correo electrónico</span>
                         </a>
                             </p>

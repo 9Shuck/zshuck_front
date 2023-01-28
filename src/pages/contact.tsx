@@ -1,5 +1,6 @@
 import ContactButton from "@/components/contactButton"
 import ContactForm from "@/components/contactForm"
+import ContactBanner from "@/components/contactBanner"
 import dynamic from "next/dynamic"
 
 const Map = dynamic(() => import('../components/googleMaps'), {
@@ -31,6 +32,9 @@ const Contact = () => {
                 </div>
                 <div className="contact__header__mapContainer">
                     <Map/>
+                </div>
+                <div className="contact__header__bannerContainer">
+                    <ContactBanner/>
                 </div>
             </div>
 

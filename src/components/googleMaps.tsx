@@ -18,7 +18,7 @@ function Map() {
  
     return(
         <div>
-            <MapContainer center={position} zoom={14} scrollWheelZoom={false} style={{ height: "400px", width: "100%" }} whenCreated={setMap}>
+            <MapContainer center={position} zoom={15} scrollWheelZoom={false} style={{ height: "400px", width: "100%" }} whenCreated={setMap}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Circle center={position} radius={600} color="#ef7146"/>
         </MapContainer>
