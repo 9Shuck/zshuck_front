@@ -1,0 +1,38 @@
+.formSuccessContainer {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100vw;
+    height: 100%;
+    z-index: 999999;
+    background-color: rgba($color: #ada9a9, $alpha: 0.4);
+    display: flex;
+    justify-content: center;
+}
+
+.formSuccessModal {
+    background-color: var(--base-color);
+    width: 30em;
+    height: 15em;
+    align-self: center;
+    border: 1px solid var(--base-color);
+    border-radius: 10px;
+}
+
+.closeModal{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.8em 0.8em;
+    &__cross{
+        width: 1em;
+        cursor: pointer;
+        &:hover {
+            color: var(--secondary-color);
+        }
+    }
+
+}
+
+.hide-modal {
+    display: none;
+}

@@ -1,35 +1,44 @@
 import SocialNavbar from "./socialNavbar";
 import { useState, useEffect } from 'react'
+import FormSuccess from "./formSuccess";
 
 function ContactForm() {
 
-    const handleSubmit = (e) => { 
-        e.preventDefault()
-        console.log('Sending')
-    let data = {
-        name,
-        email,
-        message
+    const[openedModal, setOpenedModal] = useState(false)
+
+    const openModal = () => {
+        setOpenedModal(true)
     }
-    fetch('api/contact', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json, text/plain, */*',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-        }).then((res) => {
-            console.log('Response received')
-            if (res.status === 200) {
-            console.log('Response succeeded!')
-            setSubmitted(true)
-            setName('')
-            setEmail('')
-            setTopic('')
-            setMessage('')
+
+    const handleSubmit = (e) => { 
+        e.preventDefault();
+        let data = {
+            name,
+            email,
+            topic,
+            message
         }
+        console.log('1', openedModal, data.name)
+        fetch('api/contact', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json, text/plain, */*',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+            }).then((res) => {
+                if (res.status === 200) {
+                console.log('Response succeeded!')
+                setSubmitted(true)
+                setName('')
+                setEmail('')
+                setTopic('')
+                setMessage('')
+                openModal()
+                console.log('2', openedModal)
+            }
         })
-}
+    }
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -37,12 +46,16 @@ function ContactForm() {
     const [message, setMessage] = useState('')
     const [submitted, setSubmitted] = useState(false)
 
-    useEffect(()=>{
-        console.log(name, email, topic, message)
-    },[name])
 
     return(
         <div className="formContainer">
+            {openedModal ? (
+                            <div className="">
+                                <FormSuccess opened={openedModal}/>
+                            </div>
+            ) : (
+                <></>
+            )}
             <div className="formInfo" id="contactInfo">
                 <div className="formInfo__text">
                     <div className="formInfo__title">métodos de contacto</div>
@@ -73,7 +86,7 @@ function ContactForm() {
                     <SocialNavbar/>
                 </div>
             </div>
-            <form className="formFields" method="post">
+            <form className="formFields" onSubmit={handleSubmit} method="post">
                 <div>
                 <label>Name:</label>
                 <input className="formFields__input" 
@@ -126,9 +139,8 @@ function ContactForm() {
                 <input className="formFields__submit" 
                         type="submit" 
                         value="Enviar mensaje"
-                        onSubmit={(e) => {handleSubmit(e)}}/>
+                />
                 </div>
-                <div className="formFields__submit" onClick={(e) => {handleSubmit(e)}}/>
             </form>
         </div>
     )
