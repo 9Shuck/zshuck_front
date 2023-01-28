@@ -10,7 +10,7 @@ function NavBar() {
     const [scrolled, setScrolled] = useState(false);
     useEffect(() => {
         window.onscroll = function() {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 25) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -19,7 +19,7 @@ function NavBar() {
     }, []);
     
     return (
-        <div className={scrolled ? "navbar navbar-shadow" : "navbar"}>
+        <div className={scrolled ? "navbar navbar-shadow nav-bar-bg" : "navbar"}>
             <div className="navbar__logo">
                 <Link href="/">
                 <span className="secondary-color">z</span>shuck

@@ -28,6 +28,7 @@
 
   --fade-hover-time: 0.55s;
   --fade-hover-half-time: var(--fade-hover-time/2);
+  --fade-hover-double-time: var(--fade-hover-time*2);
 
   --margin-top-view: 8em;
 
@@ -79,4 +80,8 @@ html {
 
 .subheader{
   font-size: 1.5em;
+}
+
+.app{
+  background-color: transparent !important;
 }

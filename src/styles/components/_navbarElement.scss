@@ -1,8 +1,8 @@
 .navbarElement {
-    padding: 1.9em 0.1em 0.5em 0.1em;
+    padding: 1.5em 0.1em 0.8em 0.1em;
     text-decoration: none;
     color: var(--primary-color);
-    border-bottom: 2px solid var(--base-color);
+    border-bottom: 2px solid transparent;
 
     // Fade 
     -webkit-transition: color var(--fade-hover-time);

@@ -1,17 +1,20 @@
 .navbar {
-    border-bottom: 0.1em solid var(--grey-light);
     display: flex;
     position: fixed;
     width: 100vw;
     justify-content: space-between;
-    background-color: var(--base-color);
+    background-color: transparent;
     z-index: 9999;
+    -webkit-transition: background-color var(--fade-hover-time);
+    -moz-transition: background-color var(--fade-hover-time);
+    -ms-transition: background-color var(--fade-hover-time);
+    -o-transition: background-color var(--fade-hover-time);
+    transition: background-color var(--fade-hover-time);
 
     &__logo {
         font-size: 1.5em;
-        padding: 1em 3em 1em 1em;
+        padding: 0.8em 3em 1em 1em;
         & > a {
-            
             text-decoration: none;
             color: var(--primary-color);
         }
@@ -75,6 +78,16 @@
 
 }
 
+.nav-bar-bg {
+        background-color: var(--base-color);
+        -webkit-transition: background-color var(--fade-hover-time);
+        -moz-transition: background-color var(--fade-hover-time);
+        -ms-transition: background-color var(--fade-hover-time);
+        -o-transition: background-color var(--fade-hover-time);
+        transition: background-color var(--fade-hover-time);
+}
+
 .navbar-shadow {
     box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1em solid var(--grey-light);
 }
