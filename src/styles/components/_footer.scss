@@ -26,6 +26,28 @@
             &_2{
                 min-width: 30%;
                 padding: 0em 1em 0em 1em;
+                display: block;
+                & > p > a {
+                    font-size: 1.1em;
+                    text-decoration: none;
+                color: var(--primary-color);
+                -webkit-transition: color var(--fade-hover-time);
+                -moz-transition: color var(--fade-hover-time);
+                -ms-transition: color var(--fade-hover-time);
+                -o-transition: color var(--fade-hover-time);
+                transition: color var(--fade-hover-time);
+            
+                
+                &:hover {
+                    color: var(--secondary-color);
+                    -webkit-transition: color var(--fade-hover-time);
+                    -moz-transition: color var(--fade-hover-time);
+                    -ms-transition: color var(--fade-hover-time);
+                    -o-transition: color var(--fade-hover-time);
+                    transition: color var(--fade-hover-time);
+                }
+                }
+
             }
         }
         &__about {
@@ -93,6 +115,7 @@
                 }
                 &_2{
                     min-width: 30%;
+                    display: block;
                 }
             }
             &__about {
@@ -124,6 +147,27 @@
                 }
                 &_2{
                     min-width: 30%;
+                    & > p > a {
+                        font-size: 1.1em;
+                        text-decoration: none;
+                    color: var(--primary-color);
+                    -webkit-transition: color var(--fade-hover-time);
+                    -moz-transition: color var(--fade-hover-time);
+                    -ms-transition: color var(--fade-hover-time);
+                    -o-transition: color var(--fade-hover-time);
+                    transition: color var(--fade-hover-time);
+                
+                    
+                    &:hover {
+                        color: var(--secondary-color);
+                        -webkit-transition: color var(--fade-hover-time);
+                        -moz-transition: color var(--fade-hover-time);
+                        -ms-transition: color var(--fade-hover-time);
+                        -o-transition: color var(--fade-hover-time);
+                        transition: color var(--fade-hover-time);
+                    }
+                    }
+
                 }
             }
             &__about {
@@ -181,4 +225,8 @@
 
 .footerContainer{
     max-width: 100%;
+}
+
+.footer_subtitle {
+    font-size: 1.5em;
 }

@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer">
             <div className="footer__company">
                 <div className='footer__company__about'>
-                    <p>sobre mí</p>
+                    <p><span className='footer_subtitle'>sobre mí</span></p>
                     <p>Hola 👋🏽 mi nombre es Rubén Pérez y soy full-stack developer. 
                         Desarrollo todo tipo de páginas web y aplicaciones. Puedes seguirme
                         en mis redes para ver consejos sobre programación.</p>
@@ -19,7 +19,7 @@ function Footer() {
                                 </div>
                 <div className="footer__company__posts">
                     <div className='footer__company__posts_1'>
-                        <p>últimos Posts</p>
+                        <p><span className='footer_subtitle'>últimos posts</span></p>
                         <p>POST 1</p>
                         <p>POST 2</p>
                         <p>POST 3</p>
@@ -27,10 +27,10 @@ function Footer() {
                         <p>POST 5</p>
                     </div>
                     <div className='footer__company__posts_2'>
-                        <p>zshuck</p>
-                        <p>política de cookies</p>
-                        <p>política de privacidad</p>
-                        <p>contacto</p>
+                        <p><span className='footer_subtitle'><span className="secondary-color">z</span>shuck</span></p>
+                        <p><a href="/">contacto</a></p>
+                        <p><a href="/">política de cookies</a></p>
+                        <p><a href="/">política de privacidad</a></p>
                     </div>
                 </div>
             </div>
