@@ -18,13 +18,24 @@ function FormSuccess(props) {
             <div className="formSuccessContainer">
                 <div className="formSuccessModal">
                     <div className="closeModal">
+                    <div className="formSuccesModal__title">
+                        <span className="secondary-color">z</span>
+                        shuck
+                    </div>
                         <div 
                             className="closeModal__cross"
                             onClick={() => {closeModal()}}
-                        >X</div>
+                        ><span className='bold'>X</span></div>
                     </div>
-                    <p>El formulario se ha enviado correctamente 🥳</p>
-                    <p>Me pondré en contacto contigo lo antes posible</p>
+                    <div className='formSuccessModal__content'>
+                        <div className='formSuccessModal__content__1'>
+                            <p>El formulario se ha enviado correctamente.</p>
+                        </div>
+                        <div className='formSuccessModal__content__2'>
+                            <p>Me pondré en contacto contigo lo antes posible.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             ) : (
