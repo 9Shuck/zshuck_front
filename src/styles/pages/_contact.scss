@@ -7,22 +7,26 @@
         flex-direction: column;
         justify-content: center;
         background-color: var(--base-color);
-        background-image: url('https://images.unsplash.com/photo-1500304624028-5b2641868ade?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
-        background-repeat: no-repeat;
-        background-size: cover;
         opacity: 0.9;
         margin-top: 4em;
-
+        &__formContainer{
+            text-align: center;
+        }
         &__contact {
+            background-image: url('https://images.unsplash.com/photo-1500304624028-5b2641868ade?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+            background-repeat: no-repeat;
+            background-size: cover;
             padding: 10em 0 6em 0;
             display: flex;
             flex-direction: column;
             text-align: center;
-            width: 45%;
+            width: 100%;
             height: 40vh;
             margin: auto;
             opacity: 1 !important;
-            
+            &_button{
+                margin: auto;
+            }
             & > p {
                 text-transform: uppercase;
                 opacity: 1 !important;
