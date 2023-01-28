@@ -32,17 +32,21 @@
 
   --margin-top-view: 8em;
 
+  --margin-top-navbar: 180px;
+
 }
 
 body {
   margin: 0;
   font-family: var(--font);
   -webkit-font-smoothing: antialiased;
+  
 }
 
 html { 
   padding:0; 
   margin:0;
+  scroll-behavior:smooth;
 }
 
 .secondary-color{
