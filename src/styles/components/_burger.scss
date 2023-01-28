@@ -1,4 +1,5 @@
 .bm-burger-button {
+    padding: 1.5em 3em 1em 1em;
     width: 36px;
     height: 30px;
     right: 36px;
@@ -39,8 +40,7 @@
 }
 
 .bm-menu-wrap {
-    position: fixed;
-    height: 100%;
+    height: 100vh;
     width: 100vw !important;
     position: absolute !important;
     left:0;
@@ -51,6 +51,7 @@
 .bm-menu {
     background: var(--base-color);
     font-size: 1.15em;
+    height: 100vh !important;
 }
 
 .bm-burger-bars {

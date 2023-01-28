@@ -3,7 +3,7 @@ import { navLinks } from "../data/navlinks"
 
 
 export const NavbarLinks = () => (
-    <>
+    <div className='navbarLinks'>
         {
             navLinks.map((link, index) => {
                 return(
@@ -16,5 +16,5 @@ export const NavbarLinks = () => (
                 )
             })
         }
-    </>
+    </div>
 )
