@@ -3,7 +3,7 @@
     margin-top: 5em;
     padding: 2em 0em 1em em;
     min-height: 5em;
-    min-width: 100%;
+    min-width: 100vw;
     color: var(--primary-color);
     font-size: 0.7em;
     display: block;
@@ -15,8 +15,8 @@
     }
     &__company {
         vertical-align: middle;
-        margin-right: 0.5em;
-        margin-left: 0.5em;
+        margin-right: 0em;
+        margin-left: 0em;
         padding: 5em 0 5em 0;
         &__posts{
             &_1{
