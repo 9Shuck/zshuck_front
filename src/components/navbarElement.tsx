@@ -5,6 +5,7 @@ interface navbarElementTools {
     link: string;
     name: string;
     blank: string;
+    click: () =>void;
 }
 
 function NavbarElement(props: navbarElementTools) {
@@ -14,6 +15,7 @@ function NavbarElement(props: navbarElementTools) {
             href={props.link} 
             target={props.blank} 
             rel="noreferrer"
+            onClick={props.click}
         >
             {props.name}
         </Link>
@@ -23,7 +25,8 @@ function NavbarElement(props: navbarElementTools) {
 NavbarElement.propTypes = {
     name: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
-    blank: PropTypes.string
+    blank: PropTypes.string,
+    click: PropTypes.func
 }
 
 export default NavbarElement;

@@ -10,7 +10,7 @@ function ContactForm() {
         setOpenedModal(true)
     }
 
-    const handleSubmit = (e) => { 
+    async function handleSubmit(e){ 
         e.preventDefault();
         let data = {
             name,
@@ -18,8 +18,7 @@ function ContactForm() {
             topic,
             message
         }
-        console.log('1', openedModal, data.name)
-        fetch('api/contact', {
+        await fetch('api/contact', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json, text/plain, */*',
@@ -27,16 +26,13 @@ function ContactForm() {
             },
             body: JSON.stringify(data)
             }).then((res) => {
-                if (res.status === 200) {
-                console.log('Response succeeded!')
+                console.log(res.status)
                 setSubmitted(true)
                 setName('')
                 setEmail('')
                 setTopic('')
                 setMessage('')
-                openModal()
-                console.log('2', openedModal)
-            }
+                openModal();
         })
     }
 

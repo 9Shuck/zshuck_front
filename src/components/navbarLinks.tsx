@@ -2,7 +2,7 @@ import NavbarElement from './navbarElement'
 import { navLinks } from "../data/navlinks"
 
 
-export const NavbarLinks = () => (
+export const NavbarLinks = (props) => (
     <div className='navbarLinks'>
         {
             navLinks.map((link, index) => {
@@ -12,7 +12,9 @@ export const NavbarLinks = () => (
                         name={link.name} 
                         link={link.path} 
                         blank=""
+                        click={props.closeSideBar}
                     />
+                    
                 )
             })
         }

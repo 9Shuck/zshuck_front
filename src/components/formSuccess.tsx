@@ -5,7 +5,6 @@ function FormSuccess(props) {
     const[openModal, setOpenModal] = useState(props.opened)
 
     useEffect(() => {
-        console.log('CHILD', openModal)
     }, [openModal])
 
     const closeModal = () => {

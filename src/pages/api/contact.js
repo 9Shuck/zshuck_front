@@ -3,8 +3,7 @@ export default function (req, res) {
     
     let nodemailer = require('nodemailer')
     const transporter = nodemailer.createTransport({
-        port: 465,
-        host: "smtp.gmail.com",
+        service: 'Gmail',
         auth: {
             user: process.env.email,
             pass: process.env.password,
@@ -23,11 +22,18 @@ export default function (req, res) {
             ${req.body.email}
         </p>`
     }
-    transporter.sendMail(mailData, function (err, info) {
-        if(err)
-            console.log(err)
-        else
-            console.log(info)
-    })
-    res.status(200)
+    if (req.method === 'POST') {
+        transporter.sendMail(mailData, (err, info) => {
+    
+        if (err) {
+            res.status(404).json({
+                error: `Connection refused at ${err.address}`
+            });
+        } else {
+            res.status(250).json({
+                success: `Message delivered to ${info.accepted}`
+            });
+        }
+        });
+    }
 }
