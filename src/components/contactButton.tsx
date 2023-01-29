@@ -1,10 +1,11 @@
 function ContactButton() {
     return(
-        <div className="contactButton">
-            <a href="/contact#">
-                contacta conmigo
+
+            <a href="/contact#contactInfo" className="contactButtonA">
+                <div className="contactButton">
+                    contacta conmigo
+                </div>
             </a>
-        </div>
     )
 }
 

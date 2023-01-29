@@ -42,7 +42,7 @@ function SocialNavbar() {
                 social.map(x => {
                     return(
                         <a className="socialLink" href={x.media.link}
-                            target='_blank'>{x.media.icon}</a>
+                            target='_blank' key={social.indexOf(x)}>{x.media.icon}</a>
                     )
                 })
             }

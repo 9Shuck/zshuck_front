@@ -28,7 +28,7 @@ function Footer() {
                     </div>
                     <div className='footer__company__posts_2'>
                         <p><span className='footer_subtitle'><span className="secondary-color">z</span>shuck</span></p>
-                        <p><a href="/">contacto</a></p>
+                        <p><a href="/contact">contacto</a></p>
                         <p><a href="/">política de cookies</a></p>
                         <p><a href="/">política de privacidad</a></p>
                     </div>
@@ -39,7 +39,7 @@ function Footer() {
                 <div className="footer__social__links">
                     {array.map(x => {
                         return(
-                            <a href="/" target="_blank">{x}</a>
+                            <a href="/contact" target="_blank" key={array.indexOf(x)}>{x}</a>
                         )
                     })}
                 </div>

@@ -1,0 +1,48 @@
+.contactBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    letter-spacing: 0.10em;
+    padding: 3em 0em 3em 0em;
+    &__mail{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__location{
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.contactBannerAn{
+    text-decoration: none;
+    color: var(--primary-color);
+    &:hover {
+        color: var(--grey-dark);
+    }
+}
+
+@media (min-width: 768px) {
+    .contactBanner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        letter-spacing: 0.10em;
+        padding: 3em 0em 3em 0em;
+        text-decoration: none;
+
+        &__mail{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        &__location{
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}
+
+#email{
+    scroll-margin-top: calc(var(--margin-top-navbar)/2);
+}
