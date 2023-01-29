@@ -1,15 +1,33 @@
+export default function (req, res) {
+    require('dotenv').config()
+    
+    let nodemailer = require('nodemailer')
+    const transporter = nodemailer.createTransport({
+        port: 465,
+        host: "smtp.gmail.com",
+        auth: {
+            user: process.env.email,
+            pass: process.env.password,
+        },
+        secure: true,
+    })
 
-export default async function (req, res) {
-    try {
-        const response = await getData();
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'application/json');
-        res.setHeader('Cache-Control', 'max-age=180000');
-        res.end(JSON.stringify(response));
+    const mailData = {
+        from: `Contact Form`,
+        to: process.env.email,
+        subject: `[${req.body.topic}]`,
+        text: req.body.message + " | Sent from: " + req.body.email,
+        html: `<div><p>Message:</p>${req.body.message}</div>
+        <p>
+        Sent from:
+            ${req.body.email}
+        </p>`
     }
-
-    catch (error) {
-        res.json(error);
-        res.status(405).end();
-    }
+    transporter.sendMail(mailData, function (err, info) {
+        if(err)
+            console.log(err)
+        else
+            console.log(info)
+    })
+    res.status(200)
 }
