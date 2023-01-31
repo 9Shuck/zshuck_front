@@ -9,16 +9,18 @@ const Project = () => (
     <div className="projectContainer">
         <ProjectHeader/>
         <div className="projectContainer__title">
-            <div>PROYECTOS</div>
+            <div id="projects">PROYECTOS</div>
             <div className="projectContainer__title_dec"></div>
         </div>
         <ProjectWidget/>
         <div className="projectContainer__title">
-            <div>TECNOLOGÍAS</div>
+            <div id="technologies">TECNOLOGÍAS</div>
             <div className="projectContainer__title_dec"></div>
         </div>
-        <TechnologyWidget/>
-        <SplitBanner/>
+        <TechnologyWidget/> 
+        <div  className="projectContainer__splitBanner">
+            <SplitBanner/>
+        </div>
     <ContactBanner/>
     </div>
 

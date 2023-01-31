@@ -1,18 +1,19 @@
 .technologyWidgetContainer{
-    text-align: center;
+    width: 100%;
 
     &_w{
-        margin: auto;
         width: 80%;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 30px;
+        margin: auto;
+        display: grid;
+        grid-auto-columns: minmax(100px, auto);
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        row-gap: 20px;
     }
 }
 
 .technologyCard {
-    width: 10em;
+    width: 140px;
+    margin: auto;
     color: var(--grey);
     border: 1px solid var(--grey-mid-light);
     border-radius: 5px;
@@ -22,6 +23,7 @@
     -ms-transition: border var(--fade-hover-time);
     -o-transition: border var(--fade-hover-time);
     transition: border var(--fade-hover-time);
+    text-align: center;
     &:hover{
         border: 1px solid var(--secondary-color-light);
         box-shadow: 0 0 3px var(--secondary-color-light);
@@ -39,6 +41,7 @@
         -ms-transition: color var(--fade-hover-time);
         -o-transition: color var(--fade-hover-time);
         transition: color var(--fade-hover-time);
+        text-align: left;
     }
     &__stack{
         font-size: 0.6em;
@@ -49,6 +52,7 @@
         -ms-transition: color var(--fade-hover-time);
         -o-transition: color var(--fade-hover-time);
         transition: color var(--fade-hover-time);
+        text-align: left;
     }
 }
 .technologyLink{

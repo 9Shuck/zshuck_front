@@ -1,5 +1,6 @@
 .bm-burger-button {
-    padding: 1.1em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
+    margin-right: 20px;
     width: 36px;
     height: 30px;
     right: 36px;
@@ -24,8 +25,8 @@
 #react-burger-menu-btn{
     width: 36px !important;
     height: 30px !important;
-    right: 15px !important;
-    top: 26px !important;
+    right: 35px !important;
+    top: 20px !important;
     left: auto !important;
 }
 
@@ -66,7 +67,7 @@
 .bm-cross-button {
     height: 40px !important;
     width: 50px;
-    right: 1.4em !important;
+    right: 2.6em !important;
     top: 15px !important;
 
     &:hover .bm-cross{

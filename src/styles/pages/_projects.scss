@@ -14,4 +14,11 @@
             margin: auto;
         }
     }
+    &__splitBanner {
+        margin-top: 60px;
+    }
+}
+
+#projects, #technologies {
+    scroll-margin-top: var(--margin-top-view);
 }

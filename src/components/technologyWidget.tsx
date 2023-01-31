@@ -1,58 +1,17 @@
+import Technologies from '../data/technology/technologies.json'
+
+var technologies = Technologies;
+
 function TechnologyWidget(){
-    
-    var technologies = [
-        {
-            'name': 'javascript',
-            'logo': 'url',
-            'stack': 'frontend',
-            'link': 'linnk'
-        },
-        {
-            'name': 'javascript',
-            'logo': 'url',
-            'stack': 'frontend',
-            'link': 'linnk'
-        },
-        {
-            'name': 'javascript',
-            'logo': 'url',
-            'stack': 'frontend',
-            'link': 'linnk'
-        },
-        {
-            'name': 'javascript',
-            'logo': 'url',
-            'stack': 'frontend',
-            'link': 'linnk'
-        },
-        {
-            'name': 'javascript',
-            'logo': 'url',
-            'stack': 'frontend',
-            'link': 'linnk'
-        },
-        {
-            'name': 'javascript',
-            'logo': 'url',
-            'stack': 'frontend',
-            'link': 'linnk'
-        },
-        {
-            'name': 'javascript',
-            'logo': 'url',
-            'stack': 'frontend',
-            'link': 'linnk'
-        },
-    ]
 
     return(
         <div className="technologyWidgetContainer">
             <div className="technologyWidgetContainer_w">
-        {
+        {   
             technologies.map(x => (
-                <a className="technologyLink" href={`/${x.link}`}>
+                <a className="technologyLink" href={x.link} target="_blank">
                     <div className="technologyCard">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" width="50" height="55"/>
+                        <img src={x.logo} height="55"/>
                         <div className="technologyCard__text">{x.name}</div>
                         <div className="technologyCard__stack">{x.stack}</div>
                     </div>
