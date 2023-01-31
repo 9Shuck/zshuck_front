@@ -1,0 +1,39 @@
+.technologyWidgetContainer{
+    text-align: center;
+
+    &_w{
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+.technologyCard {
+    width: 10em;
+    border: 1px solid var(--grey-mid-light);
+    border-radius: 5px;
+    padding: 2em 1em 2em 1em;
+    -webkit-transition: border var(--fade-hover-time);
+    -moz-transition: border var(--fade-hover-time);
+    -ms-transition: border var(--fade-hover-time);
+    -o-transition: border var(--fade-hover-time);
+    transition: border var(--fade-hover-time);
+    &:hover{
+        border: 1px solid var(--secondary-color-light);
+        box-shadow: 0 0 3px var(--secondary-color-light);
+        -moz-box-shadow: 0 0 3px var(--secondary-color-light);
+        -webkit-box-shadow: 0 0 3px var(--secondary-color-light);
+        -webkit-transition: border var(--fade-hover-time);
+        -moz-transition: border var(--fade-hover-time);
+        -ms-transition: border var(--fade-hover-time);
+        -o-transition: border var(--fade-hover-time);
+        transition: border var(--fade-hover-time);
+    }
+}
+.technologyLink{
+    text-decoration: none;
+    color: var(--grey);
+}

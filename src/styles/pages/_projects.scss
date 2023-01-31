@@ -1,0 +1,17 @@
+.projectContainer {
+    &__title{
+        margin-top: 5em;
+        margin-bottom: 4em;
+        text-align: center;
+        font-size: 0.8em;
+        color: var(--grey-dark);
+        text-align: center;
+
+        &_dec{
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 1em;
+            width: 3em;
+            margin: auto;
+        }
+    }
+}

@@ -5,7 +5,7 @@ interface navbarElementTools {
     link: string;
     name: string;
     blank: string;
-    click: () =>void;
+    click: () => void;
 }
 
 function NavbarElement(props: navbarElementTools) {

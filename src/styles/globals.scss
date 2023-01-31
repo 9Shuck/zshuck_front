@@ -12,6 +12,10 @@
 @import 'components/contactBanner';
 @import 'components/formSuccess';
 @import 'components/splitBanner';
+@import 'pages/projects';
+@import 'components/projectHeader';
+@import 'components/projectWidget';
+@import 'components/technologyWidget.scss';
 
 :root {
   --base-color: white;

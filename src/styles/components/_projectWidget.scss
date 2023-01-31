@@ -1,0 +1,115 @@
+.projectWidgetContainer {
+    display: grid;
+    justify-items: center;
+    justify-content: space-between;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 1;
+    width: calc(100% - 30px);
+    gap: 15px;
+}
+.projectCard{
+    margin: auto;
+    cursor: url(https://ani.cursors-4u.net/anime/ani-13/ani1230.ani), url(https://ani.cursors-4u.net/anime/ani-13/ani1230.png), auto !important;
+    position:relative;
+    &__img {
+        width: 100%;
+    }
+
+    & > img {
+        width: 100%;
+        min-width: 100%;
+        height: 100%;
+    }
+    &:hover {
+    }
+    & > .projectCard__description{
+
+    }
+    &__hover{
+        background-color: transparent;
+        -webkit-transition: background-color .5s;   
+        -moz-transition: background-color .5s;   
+        -ms-transition: background-color .5s;   
+        -o-transition: background-color .5s;   
+        transition: background-color .5s; 
+
+        position: absolute;
+        
+        height: 80%;
+        width: 100%;
+        z-index:999;
+    }
+    &__description{
+        position: absolute;
+        background-color: var(--base-color);
+        width: 100%;
+        color: var(--secondary-color);
+        text-align: center;
+        bottom:0;
+        line-height: 0.6;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        padding: 1em 0em 1em 0em;
+        letter-spacing: 0.14em;
+        height: 20%;
+        -webkit-transition: height .2s linear;   
+        -moz-transition: height .2s linear;   
+        -ms-transition: height .2s linear;   
+        -o-transition: height .2s linear;   
+        transition: height .2s linear; 
+        z-index: 999;
+
+        &_1{
+            color: var(--grey-dark);
+            font-size: 0.9em;
+        }
+        &_2 {
+            color: var(--grey);
+            font-size: 0.7em;
+        }
+    }
+}
+
+.projectCard:hover .projectCard__description{
+        -webkit-transition: height .2s linear;   
+        -moz-transition: height .2s linear;   
+        -ms-transition: height .2s linear;   
+        -o-transition: height .2s linear;   
+        transition: height .2s linear; 
+        height: 40%;
+}
+
+.projectCard:hover .projectCard__hover{
+        -webkit-transition: background-color .5s;   
+        -moz-transition: background-color .5s;   
+        -ms-transition: background-color .5s;   
+        -o-transition: background-color .5s;   
+        transition: background-color .5s; 
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 60%;
+        z-index:999;
+}
+
+@media(max-width: 1024px) {
+    .projectWidgetContainer {
+        grid-template-columns: 50% 50%;
+        width: calc(100% - 15px);
+    }
+    .projectCard{
+        & > img {
+        }
+    }
+}
+
+@media(max-width:768px){
+    .projectWidgetContainer {
+        grid-template-columns: 100%;
+        width: calc(100%);
+    }
+    .projectCard{
+        & > img {
+        }
+    }
+}
