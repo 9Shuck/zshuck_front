@@ -13,9 +13,10 @@
 
 .technologyCard {
     width: 10em;
+    color: var(--grey);
     border: 1px solid var(--grey-mid-light);
     border-radius: 5px;
-    padding: 2em 1em 2em 1em;
+    padding: 2em 1em 1em 1em;
     -webkit-transition: border var(--fade-hover-time);
     -moz-transition: border var(--fade-hover-time);
     -ms-transition: border var(--fade-hover-time);
@@ -24,16 +25,53 @@
     &:hover{
         border: 1px solid var(--secondary-color-light);
         box-shadow: 0 0 3px var(--secondary-color-light);
-        -moz-box-shadow: 0 0 3px var(--secondary-color-light);
-        -webkit-box-shadow: 0 0 3px var(--secondary-color-light);
         -webkit-transition: border var(--fade-hover-time);
         -moz-transition: border var(--fade-hover-time);
         -ms-transition: border var(--fade-hover-time);
         -o-transition: border var(--fade-hover-time);
         transition: border var(--fade-hover-time);
     }
+    &__text{
+        margin-top: 1.25em;
+        color: var(--grey);
+        -webkit-transition: color var(--fade-hover-time);
+        -moz-transition: color var(--fade-hover-time);
+        -ms-transition: color var(--fade-hover-time);
+        -o-transition: color var(--fade-hover-time);
+        transition: color var(--fade-hover-time);
+    }
+    &__stack{
+        font-size: 0.6em;
+        margin-top: 1em;
+        color: (--base-color);
+        -webkit-transition: color var(--fade-hover-time);
+        -moz-transition: color var(--fade-hover-time);
+        -ms-transition: color var(--fade-hover-time);
+        -o-transition: color var(--fade-hover-time);
+        transition: color var(--fade-hover-time);
+    }
 }
 .technologyLink{
     text-decoration: none;
     color: var(--grey);
+    text-transform: uppercase;
+}
+
+.technologyCard:hover .technologyCard__text{
+    color: var(--secondary-color);
+    -webkit-transition: color var(--fade-hover-time);
+    -moz-transition: color var(--fade-hover-time);
+    -ms-transition: color var(--fade-hover-time);
+    -o-transition: color var(--fade-hover-time);
+    transition: color var(--fade-hover-time);
+}
+.technologyCard:hover .technologyCard__stack{
+    color: var(--secondary-color-light);
+    -webkit-transition: color var(--fade-hover-time);
+    -moz-transition: color var(--fade-hover-time);
+    -ms-transition: color var(--fade-hover-time);
+    -o-transition: color var(--fade-hover-time);
+    transition: color var(--fade-hover-time);
+
+    
 }

@@ -35,18 +35,43 @@
             display: none;
             gap:50px;
         }
+    }
 
-        @media (min-width: 769px) {
+}
+
+// TABLET
+@media (min-width: 768px) {
+    .navbar {
+        justify-content: space-between !important;
+        &__menu{
+            &_sm {
+                display: flex;
+            }
+            &_md {
+                display: none;
+                }
+            }
+            &_lg {
+                display: none;
+            }
+        }
+}
+
+// DESKTOP
+@media (min-width: 1024px) {
+    
+    .navbar {
+        justify-content: space-around !important;
+        &__menu{
             &_sm {
                 display: none;
             }
             &_md {
                 display: flex;
                 width: 100%;
-                justify-content: space-around;
                 .navbarLinks{
                     display: flex;
-                    padding: 0em 5em 1em 1em;
+                    padding: 0.2em 2em 1em 1em;
                     gap: 50px;
                 }
             }
@@ -54,40 +79,19 @@
                 display: none;
             }
         }
-
-        @media (min-width: 1024px) {
-            &_sm {
-                display: none;
-            }
-            &_md {
-                display: none;
-            }
-            &_lg {
-                display: flex;
-                justify-content: space-around;
-                width: 100% !important;
-                
-                .navbarLinks{
-                    display: flex;
-                    padding: 0em 5em 1em 1em;
-                    gap: 50px;
-                }
-            }
-        }
-    }
-
+}
 }
 
 .nav-bar-bg {
-        background-color: var(--base-color);
-        -webkit-transition: background-color var(--fade-hover-time);
-        -moz-transition: background-color var(--fade-hover-time);
-        -ms-transition: background-color var(--fade-hover-time);
-        -o-transition: background-color var(--fade-hover-time);
-        transition: background-color var(--fade-hover-time);
+    background-color: var(--base-color);
+    -webkit-transition: background-color var(--fade-hover-time);
+    -moz-transition: background-color var(--fade-hover-time);
+    -ms-transition: background-color var(--fade-hover-time);
+    -o-transition: background-color var(--fade-hover-time);
+    transition: background-color var(--fade-hover-time);
 }
 
 .navbar-shadow {
-    box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.2);
-    border-bottom: 0.1em solid var(--grey-light);
+box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.2);
+border-bottom: 0.1em solid var(--grey-light);
 }
