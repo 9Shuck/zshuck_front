@@ -19,7 +19,7 @@ const MailIcon = (props) => (
         gradientUnits="userSpaceOnUse"
         spreadMethod="reflect"
       >
-        <stop offset="0" stopColor="#6DC7FF"></stop>
+        <stop offset="0" stopColor="#f43d0075"></stop>
         <stop offset="1" stopColor="#E6ABFF"></stop>
       </linearGradient>
       <path
@@ -35,7 +35,7 @@ const MailIcon = (props) => (
         gradientUnits="userSpaceOnUse"
         spreadMethod="reflect"
       >
-        <stop offset="0" stopColor="#1A6DFF"></stop>
+        <stop offset="0" stopColor="#F43B00"></stop>
         <stop offset="1" stopColor="#C822FF"></stop>
       </linearGradient>
       <path
